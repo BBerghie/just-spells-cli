@@ -9,22 +9,29 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>net.spell</groupId>
-    <artifactId>cli</artifactId>
+    <artifactId>spell-cli</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spell-cli</name>
     <description>spell-cli</description>
-    <url/>
+    <url>https://spells.ikerlab.com</url>
     <licenses>
-        <license/>
+        <license>
+            <name>GPL-3.0</name>
+        </license>
     </licenses>
     <developers>
-        <developer/>
+        <developer>
+            <name>Bogdan Berghie</name>
+        </developer>
+        <developer>
+            <name>Iker Ortega</name>
+        </developer>
     </developers>
     <scm>
-        <connection/>
+        <connection>https://github.com/BBerghie/just-spells-cli.git</connection>
         <developerConnection/>
         <tag/>
-        <url/>
+        <url>https://github.com/BBerghie/just-spells-cli</url>
     </scm>
     <properties>
         <java.version>25</java.version>
@@ -72,6 +79,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
